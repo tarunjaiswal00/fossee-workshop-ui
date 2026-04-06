@@ -10,7 +10,7 @@ const Navbar = () => {
         </h1>
         {/*hamburger button*/}
         <button className="md:hidden text-white text-2xl focus:outline-none px-1" onClick={() =>setIsOpen(!isOpen)}>
-             {isOpen?'✕':'☰'}
+        {isOpen?'✕':'☰'}
         </button>
         
 
@@ -20,7 +20,7 @@ const Navbar = () => {
           <li><a href="/workshops" className="hover:text-yellow-400 transition-colors duration-200">Workshops</a></li>
           <li><a href="/login" className="hover:text-yellow-400 transition-colors duration-200">Login</a></li>
           <li><a href="/register" className="hover:text-yellow-400 transition-colors duration-200">Register</a></li>
-          <li><a href="/propose" className="hover:text-yellow-400 transition-colors duration-200">Propose Workshop</a></li>
+          <li><a href="/propose" className="hover:text-yellow-400 transition-colors duration-200">Proposed Workshops</a></li>
           <li><a href="/statistics" className="hover:text-yellow-400 transition-colors duration-200">Statistics</a></li>
         </ul>
       </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <li><a href="/workshops" className="hover:text-yellow-400 transition-colors duration-200">Workshops</a></li>
           <li><a href="/login" className="hover:text-yellow-400 transition-colors duration-200">Login</a></li>
           <li><a href="/register" className="hover:text-yellow-400 transition-colors duration-200">Register</a></li>
-          <li><a href="/propose" className="hover:text-yellow-400 transition-colors duration-200">Propose Workshop</a></li>
+          <li><a href="/propose" className="hover:text-yellow-400 transition-colors duration-200">Proposed Workshops</a></li>
           <li><a href="/statistics" className="hover:text-yellow-400 transition-colors duration-200">Statistics</a></li>
         </ul>
       )}
