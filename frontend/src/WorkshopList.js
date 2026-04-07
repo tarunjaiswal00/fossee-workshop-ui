@@ -6,8 +6,7 @@ const workshops=[
   {id:4,title:"OpenFOAM",description:"Computational fluid dynamics simulations using OpenFOAM", level:"Advanced"},
   {id:5,title:"Arduino",  description:"Learn embedded systems and hardware programming", level:"Beginner"},
   {id:6, title:"R", description:"Statistical computing and data visualization using R Language", level:"Intermediate"},
-  {id:7,  title:"Many More",  description:"Explore our full catalog of specialized technical courses and workshops", level:"All Levels"},
-];
+  {id:7,  title:"Discover More Workshops",  description:"Explore our full catalog of specialized technical courses and workshops", level:"All Categories"},];
 const WorkshopList=()=>{
   return (
     <div className="bg-gray-50 min-h-screen py-10 px-6">
@@ -20,7 +19,7 @@ const WorkshopList=()=>{
             <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">{workshop.level}</span>
             <br/><br/>
             <a href={`/workshops/${workshop.id}`}
-              className="text-sm text-blue-600 hover:underline">View More Details... →</a>
+              className="text-sm text-blue-600 hover:underline">Explore Now →</a>
           </div>))}
       </div>
     </div>
