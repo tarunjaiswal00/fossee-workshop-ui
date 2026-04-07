@@ -8,7 +8,7 @@ const Login=()=>{
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
       <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
         <h2 className="text-3xl font-bold text-gray-900 mb-1">Login</h2>
-        <p className="text-gray-500 text-sm mb-9">Welcome~Please enter your details</p>
+        <p className="text-gray-500 text-sm mb-9">Welcome! Please enter your details</p>
         <label className="text-sm text-gray-600 font-medium">Email</label>
         <input
           type="email"
@@ -27,7 +27,7 @@ const Login=()=>{
         />
         <button
           onClick={handleSubmit}
-          className="w-full bg-yellow-400 text-gray-900 py-2 rounded font-semibold hover:bg-yellow-500 transition-colors duration-200">
+          className="w-full bg-yellow-400 text-gray-700 py-2 rounded font-semibold hover:bg-yellow-500 transition-colors duration-200">
           Login
         </button>
 
