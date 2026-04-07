@@ -49,3 +49,5 @@ db.sqlite3
 !screenshots/**
 !screenshots/before/
 !screenshots/before/*.png
+frontend/node_modules/
+node_modules/
