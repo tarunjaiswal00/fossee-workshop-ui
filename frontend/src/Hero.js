@@ -16,8 +16,4 @@ const Hero =()=>{
           Explore Workshops
         </a>
       </div>
-    </section>
-  );
-};
-
-export default Hero;
+    </section>);};export default Hero;
