@@ -6,6 +6,8 @@ const[isOpen,setIsOpen]=useState(false);
       <div   className="flex justify-between items-center">
       {/* Yellow Logo And Title */}
         <div className="flex items-center gap-4">
+          {/* tried w-16 first but h-20 looked better on big screens
+           keeping yellow as accent - matches FOSSEE's vibe */}
           <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-gray-700 font-bold text-xs">
             FOSSEE
           </div>
@@ -22,10 +24,11 @@ const[isOpen,setIsOpen]=useState(false);
         <ul  className="hidden md:flex gap-6 text-sm font-medium">
           <li><a href="/" className="hover:text-yellow-400 transition-colors duration-300">Home</a></li>
           <li><a href="/workshops" className="hover:text-yellow-400 transition-colors duration-300">Workshops</a></li>
+                    <li><a href="/propose" className="hover:text-yellow-400 transition-colors duration-300">Proposed Workshops</a></li>
+          <li><a href="/statistics" className="hover:text-yellow-400 transition-colors duration-300">Statistics</a></li>
           <li><a href="/login" className="hover:text-yellow-400 transition-colors duration-300">Login</a></li>
           <li><a href="/register" className="hover:text-yellow-400 transition-colors duration-300">Register</a></li>
-          <li><a href="/propose" className="hover:text-yellow-400 transition-colors duration-300">Proposed Workshops</a></li>
-          <li><a href="/statistics" className="hover:text-yellow-400 transition-colors duration-300">Statistics</a></li>
+          <li><a href="/profile" className="hover:text-yellow-400 transition-colors duration-300">Profile</a></li>
         </ul>
       </div>
       {/*Mobile Menu*/}
@@ -33,10 +36,11 @@ const[isOpen,setIsOpen]=useState(false);
         <ul className="md:hidden mt-3 flex flex-col gap-3 text-sm font-medium">
           <li><a href="/" className="hover:text-yellow-400 transition-colors duration-300">Home</a></li>
           <li><a href="/workshops" className="hover:text-yellow-400 transition-colors duration-300">Workshops</a></li>
+                    <li><a href="/propose" className="hover:text-yellow-400 transition-colors duration-300">Proposed Workshops</a></li>
+                              <li><a href="/statistics" className="hover:text-yellow-400 transition-colors duration-300">Statistics</a></li>
           <li><a href="/login" className="hover:text-yellow-400 transition-colors duration-300">Login</a></li>
           <li><a href="/register" className="hover:text-yellow-400 transition-colors duration-300">Register</a></li>
-          <li><a href="/propose" className="hover:text-yellow-400 transition-colors duration-300">Proposed Workshops</a></li>
-          <li><a href="/statistics" className="hover:text-yellow-400 transition-colors duration-300">Statistics</a></li>
+          <li><a href="/profile" className="hover:text-yellow-400 transition-colors duration-300">Profile</a></li>
         </ul>
       )}
     </nav>);};

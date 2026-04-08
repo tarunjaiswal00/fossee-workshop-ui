@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 const workshops=[
   {id:1,title:"Scilab",description:"Learn Scilab for numerical computing and simulations", level:"Beginner"},
   {id:2,title:"Python",description:"Python programming language for scientific computing and data analysis", level:"Beginner"},
@@ -8,11 +8,24 @@ const workshops=[
   {id:6, title:"R", description:"Statistical computing and data visualization using R Language", level:"Intermediate"},
   {id:7,  title:"Discover More Workshops",  description:"Explore our full catalog of specialized technical courses and workshops", level:"All Categories"},];
 const WorkshopList=()=>{
-  return (
+const [search,setSearch]=useState('');
+const [filter,setFilter]=useState('All');
+const filtered=workshops.filter(w=>{
+const matchSearch = w.title.toLowerCase().includes(search.toLowerCase());
+const matchFilter = filter === 'All' || w.level === filter;
+return matchSearch && matchFilter;});
+  return(
     <div className="bg-gray-50 min-h-screen py-10 px-6">
       <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Available Workshops</h2>
+      <input
+          type="text"
+          placeholder="Search workshops"
+          value={search}
+          onChange={e=>setSearch(e.target.value)}
+          className="w-full max-w-md mx-auto block border border-gray-300 rounded px-4 py-2 mb-5 text-sm focus:outline-none focus:border-yellow-400"
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {workshops.map(workshop => (
+        {filtered.map(workshop=>(
           <div key={workshop.id} className="bg-white rounded-lg shadow-md p-6">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">{workshop.title}</h3>
             <p className="text-gray-500 text-sm mb-4">{workshop.description}</p>
