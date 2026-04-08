@@ -1,5 +1,6 @@
 import React from'react';
 import Login from'./Login';
+import Footer from './Footer';
 import WorkshopDetail from'./WorkshopDetail';
 import {BrowserRouter as Router,Routes,Route}from'react-router-dom';
 import Home from './Home';
@@ -17,4 +18,5 @@ function App(){
         <Route path="/workshops/:id" element={<WorkshopDetail/>}/>
         <Route path="/" element={<Home/>}/>
       </Routes>
+      <Footer/>
     </Router>);}export default App;
