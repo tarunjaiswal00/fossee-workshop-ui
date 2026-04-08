@@ -31,5 +31,5 @@ const Footer=()=>{
         </div>
       </div>
       <div className="text-center text-xs text-gray-500 mt-8 border-t border-gray-700 pt-5">
-       Made with ❤️ by FOSSEE Team · IIT Bombay © 2026
+       Made with LOVE ❤️ by FOSSEE Team · IIT Bombay © 2026
       </div></footer>);};export default Footer;

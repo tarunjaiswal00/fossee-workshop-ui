@@ -5,9 +5,12 @@ const Login=()=>{
   const handleSubmit=()=>{
     alert('Login functionality will be available soon!');};
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-indigo-50 flex items-center justify-center px-4">
       <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
-        <h2 className="text-3xl font-bold text-gray-900 mb-1">Login</h2>
+        <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-gray-900 font-bold text-xs mb-4">
+         FOSSEE
+         </div>
+        <h2 className="text-3xl font-bold text-gray-900 mb-1 border-b-2 border-gray-100 pb-4 mb-4">Login</h2>
         <p className="text-gray-500 text-sm mb-9">Welcome! Please enter your details</p>
         <label className="text-sm text-gray-600 font-medium">Email</label>
         <input
@@ -25,9 +28,12 @@ const Login=()=>{
           onChange={e=>setPassword(e.target.value)}
           className="w-full border border-gray-300 rounded px-3 py-2 text-sm mb-6 mt-1 focus:outline-none focus:border-yellow-400"
         />
+        <p className="text-xs text-right text-yellow-600 mb-4 cursor-pointer hover:underline">
+         Forgot password?
+        </p>
         <button
           onClick={handleSubmit}
-          className="w-full bg-yellow-400 text-gray-700 py-2 rounded font-semibold hover:bg-yellow-500 transition-colors duration-200">
+          className="w-full bg-yellow-300 text-gray-700 py-2 rounded font-semibold hover:bg-yellow-500 transition-colors duration-200">
           Login
         </button>
 
