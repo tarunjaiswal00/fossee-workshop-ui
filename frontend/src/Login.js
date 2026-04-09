@@ -5,7 +5,7 @@ const Login=()=>{
   const handleSubmit=()=>{
     alert('Login functionality will be available soon!');};
   return (
-    <div className="min-h-screen bg-indigo-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-slate-50 bg-green-50 flex items-center justify-center px-4">
       <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
         <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-gray-900 font-bold text-xs mb-4">
          FOSSEE

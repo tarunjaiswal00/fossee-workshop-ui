@@ -1,14 +1,13 @@
 import React, {useState} from'react';
 const Register=()=>{
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [collegeName, setCollegeName] = useState('');
-
-  const handleSubmit=()=>{
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [password, setPassword] = useState('');
+const [collegeName, setCollegeName] = useState('');
+const handleSubmit=()=>{
     alert('Registration will be starting soon!');};
   return(
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-slate-50 bg-green-50 flex items-center justify-center px-4">
       <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
         <h2 className="text-2xl font-bold text-gray-800 mb-1">Create Account</h2>
         <p className="text-gray-500 text-sm mb-9">Join FOSSEE and start your learning today</p>

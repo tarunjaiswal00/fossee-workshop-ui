@@ -15,7 +15,7 @@ const matchSearch = w.title.toLowerCase().includes(search.toLowerCase());
 const matchFilter = filter === 'All' || w.level === filter;
 return matchSearch && matchFilter;});
   return(
-    <div className="bg-gray-50 min-h-screen py-10 px-6">
+    <div className="bg-slate-50 bg-green-50 min-h-screen py-10 px-6">
       <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Available Workshops</h2>
       <input
           type="text"

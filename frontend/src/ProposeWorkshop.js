@@ -9,7 +9,7 @@ const ProposeWorkshop=()=>{
   const handleSubmit=()=>{
     alert('Proposal submitted successfully!');};
   return(
-    <div className="min-h-screen bg-blue-50 py-12 px-7">
+    <div className="min-h-screen bg-slate-50 bg-green-50 py-12 px-7">
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
         <h2 className="text-2xl font-bold text-gray-800 mb-1 border-l-4 border-yellow-400 pl-3">
                  Propose a Workshop

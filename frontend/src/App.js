@@ -5,6 +5,8 @@ import WorkshopDetail from'./WorkshopDetail';
 import ProposeWorkshop from'./ProposeWorkshop';
 import {BrowserRouter as Router,Routes,Route}from'react-router-dom';
 import Home from './Home';
+import Statistics from'./Statistics';
+import Profile from'./Profile';
 import Register from './Register';
 import Navbar from './Navbar';
 import WorkshopList from './WorkshopList';
@@ -17,6 +19,8 @@ function App(){
         <Route path="/login" element={<Login/>}/>
         <Route path="/propose" element={<ProposeWorkshop/>}/>
         <Route path="/register" element={<Register/>}/>
+        <Route path="/statistics" element={<Statistics/>}/>
+        <Route path="/profile" element={<Profile/>}/>
         <Route path="/workshops/:id" element={<WorkshopDetail/>}/>
         <Route path="/" element={<Home/>}/>
       </Routes>
