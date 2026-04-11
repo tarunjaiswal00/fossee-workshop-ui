@@ -106,7 +106,7 @@ I cloned the existing FOSSEE workshop booking website from the repository link p
 # Desktop
 | Before | After |
 |--------|-------|
-|![](../screenshots/before/workshop_details.html.png) | ![](../screenshots/after/workshop_details.png) |
+|![](../screenshots/before/workshop_details.html.png) | ![](../screenshots/after/details.png) |
 
 # Mobile
  ![Workshop Details Mobile](../screenshots/after/details_mobile.png) 
