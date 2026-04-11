@@ -26,7 +26,7 @@ return matchSearch && matchFilter;});
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {filtered.map(workshop=>(
-          <div key={workshop.id} className="bg-white rounded-lg shadow-md p-6">
+          <div key={workshop.id} className="bg-white rounded-lg shadow-md p-6 hover:-translate-y-1 hover:shadow-xl transition-all ">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">{workshop.title}</h3>
             <p className="text-gray-500 text-sm mb-4">{workshop.description}</p>
             <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">{workshop.level}</span>
