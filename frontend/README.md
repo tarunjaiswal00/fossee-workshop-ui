@@ -1,70 +1,161 @@
-# Getting Started with Create React App
+####                                  Screening Task 
+###                             FOSSEE Summer Fellowship 2026 
+##                                Python - UI/UX Enhancement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# What UI/UX enhancement I performed
 
-## Available Scripts
+I cloned the existing FOSSEE workshop booking website from the repository link provided into my own git repository (fossee-workshop-ui) and saw that its apperance was so basic with no mobile support, So I redesigned its frontend using React and Talwind CSS.The Original site was built with Django templates.I rebuilt the entire UI to make it modern,responsive and easier to use especially on mobile devices.
 
-In the project directory, you can run:
+# Design Rules that helped me a lot 
 
-### `npm start`
+* Mobile Responsive first . Firstly , I designed for small screens then scaled it up to the big level
+* I Kept dark gray,navy blue and yellow as my  main colors throughout the project
+  (yellow matches with the FOSSEE's identity, dark gray and navy blue looks professional)
+* I followed the clear visual support that  important things are bigger, bolder and highlighted 
+* I tried to be consistent with  spacing and padding across all pages
+* Good color attracts for readability
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# How I achieve Responsiveness
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* I Used Tailwind CSS breakpoints (md: lg: and many more) throughout
+* Navbar changes to the hamburger menu on mobile
+* Workshop cards change from 1 column on mobile to 3 on desktop
+* Forms are full width on mobile and max-width centered on desktop
+* I tested everything on chrome DevTools mobile simulator at 375px width
 
-### `npm test`
+# Trade-offs I Made
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* I Chossed Tailwind CSS over custom CSS - faster to write but that is 
+  less flexibility for very specific designs
+* I Used static dummy data and information availabe on internet instead of connecting to   Django backend because my task was focused on UI/UX not the backend integration
+* I tried to kept animations simple to maintain fast load time
+* I tried to prioritized mobile experience over complex desktop layout
 
-### `npm run build`
+# Challenges which I faced during the task
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* While set up the Tailwind CSS was not loading initially,I spend my lot of time debugging
+  and found that it was a version conflict with React Script
+* The React Router setup was confusing at first especially using the nested routes to connect the pages
+* Navbar structure kept breaking when adding logo  had to redo the flex layout many times
+* node_modules got pushed to GitHub accidentally u can see it in the commits ,I had to spent a lot of time in fixing it and removed cached files
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Pages that I had Redesigned
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Home Page -  Hero section + Why FOSSEE section
+2. Workshop List -  with search bar and level filter
+3. Workshop Detail -  with venue, duration, prerequisites
+4. Login - with real- time form validation
+5. Register -  with college name field
+6. Propose Workshop -  with phone number field
+7. Statistics -  dark themed with impact numbers
+8. Profile -  with enrolled workshops and status
 
-### `npm run eject`
+## Features I Added
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Search bar on workshop list to make it more reliable
+* Filter by level (Beginner/Intermediate/Advanced)
+* Card hover lift effect
+* Sticky navbar 
+* FOSSEE logo in navbar
+* Responsive hamburger menu for the Mobile
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Before/After Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Pages That Existed Before and are redesigned by me
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 1. Home Page
+# Desktop
+| Before | After |
+|--------|-------|
+| ![](../screenshots/before/Base.html.png) | ![](../screenshots/after/home.png) |
 
-## Learn More
+# Mobile
+![Home Mobile](../screenshots/after/home_mobile.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 2. Login Page
+# Desktop
+| Before | After |
+|--------|-------|
+| ![](../screenshots/before/Login.html.png) | ![](../screenshots/after/login.png) |
 
-### Code Splitting
+# Mobile
+ ![Login Mobile](../screenshots/after/login_mobile.png) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# 3. Register Page
+# Desktop
+| Before | After |
+|--------|-------|
+| ![](../screenshots/before/Register.html.png) | ![](../screenshots/after/register.png) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Mobile
+ ![Register Mobile](../screenshots/after/register_mobile.png) 
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 4. Workshop List
+# Desktop
+| Before | After |
+|--------|-------|
+| ![](../screenshots/before/workshop_type_list.html.png) | ![](../screenshots/after/workshops.png) |
 
-### Advanced Configuration
+# Mobile
+ ![Workshop Mobile](../screenshots/after/workshops_mobile.png) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# 5. Workshop Details
+# Desktop
+| Before | After |
+|--------|-------|
+|![](../screenshots/before/workshop_details.html.png) | ![](../screenshots/after/workshop_details.png) |
 
-### Deployment
+# Mobile
+ ![Workshop Details Mobile](../screenshots/after/details_mobile.png) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Pages that I added newly
 
-### `npm run build` fails to minify
+# 6. Statistics Page
+# Desktop
+![Statistics Desktop](../screenshots/after/statistics.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Mobile
+![Statistics Mobile](../screenshots/after/statistics_mobile.png)
+
+# 7. Propose Workshop Page
+# Desktop
+![Propose Desktop](../screenshots/after/propose.png)
+
+# Mobile
+![Propose Mobile](../screenshots/after/propose_mobile.png)
+
+# 8. Profile Page
+# Desktop
+![Profile Desktop](../screenshots/after/profile.png)
+
+# Mobile
+![Profile Mobile](../screenshots/after/profile_mobile.png)
+
+# Instructions for the setup 
+
+1. Clone the repository
+
+   git clone https://github.com/tarunjaiswal00/fossee-workshop-ui.git
+
+2. Go to frontend folder
+
+   cd frontend
+
+3. Install dependencies
+
+  npm install
+
+4. Start the app
+
+  npm start
+
+5. Open browser at http://localhost:3000
+
+# Tech Stack required
+
+* React
+* Tailwind CSS
+* React Router DOM
