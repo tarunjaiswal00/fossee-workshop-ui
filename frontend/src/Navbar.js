@@ -2,7 +2,7 @@ import React,{useState}from'react';
 const Navbar=()=>{
 const[isOpen,setIsOpen]=useState(false);
   return(
-    <nav  className="bg-gray-900 border-b-2 border-yellow-500 text-white px-7 py-3 shadow-md">
+    <nav  className="bg-gray-900 border-b-2 border-yellow-500 text-white px-7 py-3 shadow-md sticky top-0 z-40">
       <div   className="flex justify-between items-center">
       {/* Yellow Logo And Title */}
         <div className="flex items-center gap-4">
